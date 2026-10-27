@@ -1,4 +1,7 @@
 # Exam Scheduling and Room Allocation System
+## Live Demo
+
+Try the deployed application: https://exam-scheduling-system.streamlit.app/
 
 ## 1. Project Overview
 
