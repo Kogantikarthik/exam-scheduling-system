@@ -1,0 +1,6 @@
+﻿test_id,issue_type,expected_result,description
+TEST-001,STUDENT_OVERLAPPING_EXAMS,REJECT_CONFLICTING_SLOT,Two exams sharing a student must not overlap.
+TEST-002,ROOM_CAPACITY_EXCEEDED,REJECT_ROOM,An assignment must not exceed effective room capacity.
+TEST-003,INVIGILATOR_DOUBLE_BOOKED,REJECT_DOUBLE_BOOKING,An invigilator cannot supervise overlapping exams.
+TEST-004,ACCOMMODATION_IGNORED,REJECT_ASSIGNMENT,Accessibility and extra-time requirements must be respected.
+TEST-005,EXAM_OUTSIDE_ROOM_AVAILABILITY,REJECT_CLOSED_ROOM,An exam cannot use a room during an unavailable slot.

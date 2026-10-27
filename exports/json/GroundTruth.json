@@ -1,0 +1,7 @@
+[
+{"test_id": "TEST-001", "issue_type": "STUDENT_OVERLAPPING_EXAMS", "expected_result": "REJECT_CONFLICTING_SLOT", "description": "Two exams sharing a student must not overlap."},
+{"test_id": "TEST-002", "issue_type": "ROOM_CAPACITY_EXCEEDED", "expected_result": "REJECT_ROOM", "description": "A room cannot seat more students than its capacity."},
+{"test_id": "TEST-003", "issue_type": "INVIGILATOR_DOUBLE_BOOKED", "expected_result": "REJECT_DOUBLE_BOOKING", "description": "An invigilator cannot supervise overlapping exams."},
+{"test_id": "TEST-004", "issue_type": "ACCOMMODATION_IGNORED", "expected_result": "REJECT_ASSIGNMENT", "description": "Room accessibility and required extra time must be respected."},
+{"test_id": "TEST-005", "issue_type": "EXAM_OUTSIDE_ROOM_AVAILABILITY", "expected_result": "REJECT_CLOSED_ROOM", "description": "A closed or unavailable room cannot be assigned."}
+]

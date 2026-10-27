@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+exam_scheduling.db
+exam_scheduling_backup.db
+test_generated.db
+reproducibility_test.db
+*.sqlite
+*.sqlite3
+.streamlit/secrets.toml
+*.db

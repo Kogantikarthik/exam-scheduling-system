@@ -1,0 +1,92 @@
+﻿table,field,data_type,required,allowed_values_or_units,unique,validation_rule
+Accommodation,accommodation_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Accommodation,student_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Accommodation,needs_accessible_room,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Accommodation,extra_time_minutes,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Accommodation,effective_from,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Accommodation,effective_to,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Accommodation,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,availability_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Availability,resource_type,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,resource_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,slot_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,start_datetime,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,end_datetime,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Availability,reason_code,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ConflictGraph,exam_id_1,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+ConflictGraph,exam_id_2,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+ConflictGraph,shared_student_count,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Course,course_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Course,course_name,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Course,department,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Course,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Enrollment,enrollment_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Enrollment,student_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Enrollment,course_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Enrollment,enrollment_date,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Enrollment,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Exam,exam_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Exam,course_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Exam,exam_name,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Exam,base_duration_minutes,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Exam,estimated_students,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Exam,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ExamRequirement,requirement_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+ExamRequirement,exam_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ExamRequirement,extra_time_minutes,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ExamRequirement,required_duration_minutes,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ExamRequirement,accessible_room_required,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ExamRequirement,projector_required,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ExamRequirement,required_seats,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+GroundTruth,test_id,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+GroundTruth,issue_type,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+GroundTruth,expected_result,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+GroundTruth,description,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Invigilator,invigilator_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Invigilator,invigilator_name,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Invigilator,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Room,room_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Room,room_name,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Room,accessible,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Room,has_projector,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Room,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+RoomCapacity,room_capacity_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+RoomCapacity,room_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+RoomCapacity,capacity,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+RoomCapacity,effective_from,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+RoomCapacity,effective_to,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,assignment_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+ScheduleAssignment,exam_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,room_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,slot_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,invigilator_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,assigned_seats,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,created_at,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleAssignment,reason_code,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,event_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+ScheduleEvent,assignment_id,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,exam_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,event_type,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,old_status,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,new_status,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,event_time,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,reason_code,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ScheduleEvent,details_json,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Student,student_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+Student,student_name,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+Student,status,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+TimeSlot,slot_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+TimeSlot,start_datetime,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+TimeSlot,end_datetime,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+TimeSlot,slot_date,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+TimeSlot,duration_minutes,INTEGER,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+UnassignedExam,unassigned_id,TEXT,Yes,See schema_v2.sql CHECK constraints,Yes,See schema_v2.sql
+UnassignedExam,exam_id,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+UnassignedExam,reason_code,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+UnassignedExam,detail,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+UnassignedExam,created_at,TEXT,Yes,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ValidationReport,check,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ValidationReport,passed,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
+ValidationReport,details,TEXT,No,See schema_v2.sql CHECK constraints,See schema constraints,See schema_v2.sql
