@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = Path(
     os.environ.get(
         "EXAM_SCHEDULING_DB",
-        str(BASE_DIR / "exam_scheduling.db"),
+        str(BASE_DIR / "generated_exam_scheduling.db"),
     )
 ).expanduser().resolve()
 
